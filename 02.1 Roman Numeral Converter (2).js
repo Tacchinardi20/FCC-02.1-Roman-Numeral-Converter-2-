@@ -1,7 +1,8 @@
 function convertToRoman(num) {
   let romanNumeral = ""
+
   while (num > 0) {
-    //console.log(romanNumeral, num);
+    console.log(romanNumeral, num);
 
     if (num < 4) {
       decrementAndAddNumeral("I", 1);
@@ -33,10 +34,10 @@ function convertToRoman(num) {
       decrementAndAddNumeral("_", 1);
     }*/
 
-  function decrementAndAddNumeral(letter, decrementAmount) {
-    romanNumeral += letter;
-    num -= decrementAmount;
-  }
+    function decrementAndAddNumeral(letter, decrementAmount) {
+      romanNumeral += letter;
+      num -= decrementAmount;
+    }
 
   }
   return romanNumeral;
